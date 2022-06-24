@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-const wifi = require('node-wifi');
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,18 +6,9 @@ const wifi = require('node-wifi');
 })
 export class AppComponent {
   title = 'angular-docker';
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit(): void {
-
-    // wifi.scan((error, networks) => {
-    //   if (error) {
-    //     console.log(error);
-    //   } else {
-    //     console.log(networks);
-    //   }
-    // });
 
   }
 }

@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+ docker-fe:
+  build:
+    context: angular-docker
+    dockerfile: Dockerfile
+  ports:
+    - '80:80'
+  volumes:
+    - ./angular-docker/src:/usr/share/nginx/html/src
