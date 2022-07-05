@@ -8,8 +8,8 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { AdDirective } from './shared/directive/ad.directive';
 import { SafeHtml } from './shared/pipe/safe-html.pipe';
 import { registerComponent } from './shared/model/class/component-registry';
-import { HeroJobAdComponent } from './my-panel/hero-job-ad.component';
-import { HeroProfileComponent } from './my-panel/hero-profile.component';
+import { HeroJobAdComponent } from './hero-job/hero-job-ad.component';
+import { HeroProfileComponent } from './hero-profile/hero-profile.component';
 @NgModule({
   declarations: [
     AppComponent,
