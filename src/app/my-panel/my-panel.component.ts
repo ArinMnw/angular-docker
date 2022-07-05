@@ -35,21 +35,20 @@ export class MyPanelComponent implements OnInit {
 
 
   loadComponent() {
-    const adItem = this.adItem[0];
-    const viewContainerRef = this.adHost.viewContainerRef;
-    viewContainerRef.clear();
+    // const adItem = this.adItem[0];
+    // const viewContainerRef = this.adHost.viewContainerRef;
+    // viewContainerRef.clear();
 
-    const componentRef: ComponentRef<AdComponent> = viewContainerRef.createComponent<AdComponent>(
-      adItem.component
-    );
-    componentRef.instance.data = adItem.data;
-    componentRef.instance.onChange();
+    // const componentRef: ComponentRef<AdComponent> = viewContainerRef.createComponent<AdComponent>(
+    //   adItem.component
+    // );
+    // componentRef.instance.data = adItem.data;
+    // componentRef.instance.onChange();
   }
 
 
   loadComponents(componentRegistry?: ReadonlyMap<string, ComponentClass>) {
     this.a3.map((ad: AdDirective, index: number) => {
-      console.log(componentRegistry);
       let component = COMPONENTREGISTRY.getTypeFor(this.adItem[index].selector)
       const viewContainerRef = ad.viewContainerRef;
       viewContainerRef.clear();
